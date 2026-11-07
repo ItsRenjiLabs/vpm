@@ -1,28 +1,17 @@
 {
-    "name":"Example Listing",
-    "id":"com.vrchat.example-listing",
-    "url":"https://vrchat-community.github.io/template-package-listing/index.json",
+    "name":"ItsRenjiLabs",
+    "id":"com.itsrenjilabs.vpm",
+    "url":"https://itsrenjilabs.github.io/vpm/index.json",
     "author":{
-        "email":"developer@vrchat.com",
-        "name":"VRChat",
-        "url":"https://hello.vrchat.com"
+        "name":"ItsRenji",
+        "url":"https://github.com/ItsRenjiLabs"
     },
-    "description":"Example listing of VRChat packages",
+    "description":"Tools for VRChat creators by ItsRenji, starting with Conduit: the whole Unity editor and the VRChat SDK for AI coding agents.",
     "infoLink":{
-        "url":"http://github.com/vrchat-community/template-package-listing",
+        "url":"https://github.com/ItsRenjiLabs/vpm",
         "text":"View on GitHub"
     },
-    "bannerUrl":"banner.png",
     "githubRepos":[
-        "vrchat-community/clientsim"
-    ],
-    "packages":[
-        {
-            "name":"com.vrchat.udonsharp",
-            "releases":[
-                "https://github.com/vrchat-community/UdonSharp/releases/download/1.1.7/com.vrchat.UdonSharp.zip",
-                "https://github.com/vrchat-community/UdonSharp/releases/download/1.1.6/com.vrchat.UdonSharp-1.1.6.zip"
-            ]
-        }
+        "ItsRenjiii/Conduit"
     ]
 }

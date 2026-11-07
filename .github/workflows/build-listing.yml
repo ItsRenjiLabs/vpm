@@ -1,7 +1,10 @@
 name: Build Repo Listing
 
-on: 
+on:
   workflow_dispatch:
+  # A package repo's release workflow can send this to rebuild the listing after a release.
+  repository_dispatch:
+    types: [package-released]
   push:
     branches: main
     paths: source.json
@@ -35,6 +38,8 @@ jobs:
       - uses: actions/checkout@v4 # check out automation repo
         with:
           repository: vrchat-community/package-list-action
+          # Pinned to a known commit: an unpinned checkout runs whatever lands on main, untested.
+          ref: cb31c3b5d17d1070d7741c61de2ca1b219224039
           path: ${{env.pathToCi}}
           clean: false # otherwise the local repo will no longer be checked out
           
